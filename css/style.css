@@ -1,0 +1,179 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* шапка сайта */
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 158, 50);
+    padding: 30px;
+    box-sizing: border-box;
+    /* внутрений отступ */
+}
+
+nav {
+    width: 100%;
+    height: auto;
+}
+
+nav>ul {
+    display: flex;
+    /* элементы в теге в линию */
+    gap: 50px;
+    /* отступ в контейнере */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+nav>ul>li {
+    list-style-type: none;
+}
+
+nav>ul>li>a {
+    color: rgba(255, 255, 255, 0.548);
+    /* изменить цвет текста */
+    text-decoration: none;
+    /* убирает подчеркивание */
+    transition: all 0.3s ease;
+    /* планость при изменении */
+}
+
+nav>ul>li>a:hover {
+    color: rgb(255, 255, 255);
+}
+
+/* подвал сайта */
+
+footer {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(64, 64, 64);
+}
+
+footer>p {
+    color: white;
+   padding: 40px 0;
+}
+
+/* контент страницы */
+
+main {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.popular-tovar {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.popular-tovar>h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* измнения */
+
+.tovar-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.tovar-card {
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+
+.tovar-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.tovar-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.tovar-info>a {
+    color: white;
+    background-color: rgb(236, 158, 50);
+    padding: 5px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 10px;
+}   
+
+.tovar-info>a:hover {
+    background-color: rgb(244, 174, 77);
+}
+.product-page{
+    width: 100%;
+    display: flex;
+    height: auto;
+    gap: 20px;
+    padding: 50px 0;
+}
+.tovar-img-page{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.tovar-info-page{
+    width: 45%;
+    height: auto;
+}
+.tovar-info-page > h1{
+    margin-bottom: 50px;
+}
+.tovar-info-page:nth-child(2){
+    line-height: 1.5;
+}
+.price{
+    width: 100%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.199);
+    padding: 30px 10px;
+    border-radius: 20px;
+}
+.tovar-info-page > button{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 158, 50);
+    padding: 10px 0;
+    background-color: rgb(236, 158, 50);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.tovar-info-page > button:hover{
+    cursor: pointer;
+    background: transparent;
+    color: rgb(236, 158, 50);
+    border: 1px solid rgb(236, 158, 50);
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Название товара</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Главная страница</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product-page">
+            <div class="tovar-img-page">
+                <img src="./img/image.png" alt="" width="450px" height="450">
+            </div>
+            <div class="tovar-info-page">
+                <h1>Название товара</h1>
+
+                <p>Описание</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus at facere minima? Voluptatum, hic
+                    est vero voluptatibus, aspernatur adipisci nobis placeat quisquam voluptates nisi soluta libero
+                    consectetur laudantium dolorem facilis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat necessitatibus neque
+                    eligendi? Porro, molestiae! Soluta, non nulla? Deleniti, ratione. Natus itaque vero quo laudantium,
+                    tempora doloribus consequuntur magnam eligendi?</p>
+                <div class="price">
+                    140 000руб.
+                </div>
+                    <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate eligendi id officia
+                        eaque quos </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate eligendi id officia
+                        eaque quos </li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam cupiditate eligendi id officia
+                        eaque quos </li>
+                </ul>
+
+                <button id="buyBtn">Купить</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p align="center">Подвал сайта</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./index.html">Главная страница</a>
+                </li>
+                <li>
+                    <a href="catalog.html">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">О нас</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+        const btn = document.getElementById('buyBtn')
+        const title = document.querySelector('h1')
+        btn.addEventListener('click', (e)=>{
+            alert(`Поздравляем с покупкой ${title.textContent}!`)
+        })
+    </script>
+</body>
+
+</html>
